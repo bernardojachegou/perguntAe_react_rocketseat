@@ -3,11 +3,11 @@ import illustrationImg from 'src/assets/images/illustration.svg';
 import googleIconImg from 'src/assets/images/google-icon.svg';
 import logoImg from 'src/assets/images/logo.svg';
 import { Button } from 'src/components/Button';
-import 'src/styles/auth.scss';
 import { useAuth } from 'src/hooks/useAuth';
 import { FormEvent, useState } from 'react';
 import { database } from 'src/services/firebase';
 import toast from 'react-hot-toast';
+import 'src/styles/auth.scss';
 
 export function Home() {
   const history = useHistory();

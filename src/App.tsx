@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Home } from './pages/Home';
-import { NewRoom } from './pages/NewRoom';
-import { Room } from './pages/Room';
+import { Home } from 'src/pages/Home';
+import { NewRoom } from 'src/pages/NewRoom';
+import { Room } from 'src/pages/Room';
 import { AuthContextProvider } from './contexts/AuthContext';
 import { Toaster } from 'react-hot-toast';
 

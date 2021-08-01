@@ -3,9 +3,9 @@ import logoImg from 'src/assets/images/logo.svg';
 import { Button } from 'src/components/Button';
 import { Link, useHistory } from 'react-router-dom';
 import { FormEvent, useState } from 'react';
-import 'src/styles/auth.scss';
 import { useAuth } from 'src/hooks/useAuth';
 import { database } from 'src/services/firebase';
+import 'src/styles/auth.scss';
 
 export function NewRoom() {
   const { user } = useAuth();
