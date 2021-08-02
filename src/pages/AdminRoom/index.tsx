@@ -35,7 +35,7 @@ export function AdminRoom() {
       toast.success('A sala foi encerrada com sucesso!', {
         style: {
           color: '#fff',
-          background: '#e21c44',
+          background: '#140c44',
         },
       });
     }
@@ -60,7 +60,7 @@ export function AdminRoom() {
       toast.success('A pergunta foi deletada!', {
         style: {
           color: '#fff',
-          background: '#e21c44',
+          background: '#140c44',
         },
       });
     }

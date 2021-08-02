@@ -29,7 +29,7 @@ export function Room() {
     }
 
     if (!user) {
-      toast.error('User most be logged in');
+      toast.error('Você precisa fazer o login!');
     }
 
     const question = {
