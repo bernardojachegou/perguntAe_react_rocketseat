@@ -80,7 +80,7 @@ export function Room() {
 
         <form onSubmit={handleSendQuestion}>
           <textarea
-            placeholder="O que você quer perguntar"
+            placeholder="Faça uma pergunta..."
             onChange={(event) => setNewQuestion(event.target.value)}
             value={newQuestion}
           />

@@ -6,13 +6,13 @@
   overflow: hidden;
 
   background: $backgroundColor;
-  border: 1px solid $secondaryColor;
+  border: 1px solid $alternative;
   cursor: pointer;
 
   display: flex;
 
   div {
-    background: $secondaryColor;
+    background: $alternative;
     padding: 0 12px;
     display: flex;
     justify-content: center;

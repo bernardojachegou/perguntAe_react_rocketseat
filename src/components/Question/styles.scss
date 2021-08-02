@@ -20,7 +20,8 @@
   }
 
   &.answered {
-    background: #dbdcdd;
+    background: #fcdce2;
+    border: 1px solid $primaryColor;
   }
 
   p {
