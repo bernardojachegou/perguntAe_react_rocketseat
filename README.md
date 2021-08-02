@@ -43,4 +43,6 @@ It will run into http://localhost:3000.
 
 Remember to create an account into [Firebase](https://firebase.google.com/) and a new project to handle the Realtime Database.
 
+Deployed project running: https://letmeask-a1882.web.app/
+
 Thank you Rocketseat 💜 👋🏻 [Rocketseat community](https://discord.gg/gKUVrzrPrU)
