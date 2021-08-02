@@ -57,7 +57,7 @@ export function AdminRoom() {
   async function handleDeleteQuestion(questionId: string) {
     if (window.confirm('Tem certeza que você deseja excluir essa pergunta?')) {
       await database.ref(`rooms/${roomId}/questions/${questionId}`).remove();
-      toast.success('A pergunta foi deletada!', {
+      toast.success('A pergunta foi apagada!', {
         style: {
           color: '#fff',
           background: '#140c44',

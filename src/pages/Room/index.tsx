@@ -24,7 +24,7 @@ export function Room() {
   async function handleSendQuestion(event: FormEvent) {
     event.preventDefault();
 
-    if (newQuestion.trim() == '') {
+    if (newQuestion.trim() === '') {
       return;
     }
 
