@@ -1,69 +1,55 @@
 <p align="center">
-  <img alt="Letmeask" src=".github/newlogo.png" width="160px">
+  <img alt="perguntAê" src=".github/newlogo.png" width="350px">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=NLW&message=06&color=8257E5&labelColor=000000" alt="NLW Together 06" />
+  <img src="https://img.shields.io/static/v1?label=NLW&message=06&color=e21c44&labelColor=000000" alt="PerguntAê" />
   
-  <img src="https://img.shields.io/github/stars/rocketseat-education/nlw-06-reactjs?label=stars&message=MIT&color=8257E5&labelColor=000000" alt="Stars">
+  <img src="https://img.shields.io/github/stars/rocketseat-education/nlw-06-reactjs?label=stars&message=MIT&color=e21c44&labelColor=000000" alt="Stars">
 
-  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000" alt="License">   
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=e21c44&labelColor=000000" alt="License">   
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" src=".github/cover.svg" />
+    <img alt="PerguntAê" src=".github/cover.png" />
 </h1>
 
 <br>
 
-## 🧪 Tecnologias
+## 🧪 Technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
+This project was developed using:
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## 🚀 Como executar
+## 🚀 Running the project
 
-Clone o projeto e acesse a pasta do mesmo.
-
+Clone the repository and go into the folder:
 ```bash
-$ git clone https://github.com/rocketseat-education/nlw-06-reactjs
-$ cd nlw-06-reactjs
+$ git clone https://github.com/bernardojachegou/letmeask_react_rocketseat
+$ cd letmeask_react_rocketseat
 ```
 
-Para iniciá-lo, siga os passos abaixo:
+To start:
 ```bash
-# Instalar as dependências
+# Install the dependencies
 $ yarn
 
-# Iniciar o projeto
+# Start the project
 $ yarn start
 ```
-O app estará disponível no seu browser pelo endereço http://localhost:3000.
+It will run into http://localhost:3000.
 
-Lembrando que será necessário criar uma conta no [Firebase](https://firebase.google.com/) e um projeto para disponibilizar um Realtime Database.
+Remember to create an account into [Firebase](https://firebase.google.com/) and a new project to handle the Realtime Database.
 
-## 💻 Projeto
+## 💻 Project
 
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
+PerguntAê is a simple and nice tool that can be used to handle the Q&A in streamming platforms.
 
-Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada dos dias 20 a 27 de Junho de 2021.
+This project was created based in **[Next Level Week Together](https://nextlevelweek.com/)**, in July 2021.
 
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através do link abaixo:
-
-- [Layout Web](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate) 
-
-Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
-
-## 📝 License
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
-Feito com 💜 by Rocketseat 👋🏻 [Participe da nossa comunidade](https://discord.gg/gKUVrzrPrU)
+Thank you Rocketseat 💜 👋🏻 [Rocketseat community](https://discord.gg/gKUVrzrPrU)
