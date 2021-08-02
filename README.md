@@ -26,8 +26,8 @@ This project was developed using:
 
 Clone the repository and go into the folder:
 ```bash
-$ git clone https://github.com/bernardojachegou/letmeask_react_rocketseat
-$ cd letmeask_react_rocketseat
+$ git clone https://github.com/bernardojachegou/perguntAe_react_rocketseat
+$ cd perguntAe_react_rocketseat
 ```
 
 To start:
