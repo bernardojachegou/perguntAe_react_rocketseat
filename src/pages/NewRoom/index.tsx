@@ -1,5 +1,5 @@
 import illustrationImg from 'src/assets/images/illustration.svg';
-import logoImg from 'src/assets/images/logo.svg';
+import logoImg from 'src/assets/images/newlogo.png';
 import { Button } from 'src/components/Button';
 import { Link, useHistory } from 'react-router-dom';
 import { FormEvent, useState } from 'react';
@@ -46,7 +46,7 @@ export function NewRoom() {
           <form onSubmit={handleCreateRoom}>
             <input
               type="text"
-              placeholder="Nome da sala"
+              placeholder="Nome da sala (Ex: Estudos, Mentoria)"
               onChange={(event) => setNewRoom(event.target.value)}
               value={newRoom}
             />

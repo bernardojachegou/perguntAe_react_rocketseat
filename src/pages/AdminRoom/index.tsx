@@ -1,5 +1,5 @@
-import { useHistory, useParams } from 'react-router-dom';
-import logoImg from 'src/assets/images/logo.svg';
+import { useHistory, useParams, Link } from 'react-router-dom';
+import logoImg from 'src/assets/images/newlogo.png';
 import { Button } from 'src/components/Button';
 import { RoomCode } from 'src/components/RoomCode';
 import { Question } from 'src/components/Question';
@@ -7,8 +7,9 @@ import { useRoom } from 'src/hooks/useRoom';
 import deleteImg from 'src/assets/images/delete.svg';
 import checkImg from 'src/assets/images/check.svg';
 import answerImg from 'src/assets/images/answer.svg';
-import 'src/pages/AdminRoom/styles.scss';
+import 'src/styles/room.scss';
 import { database } from 'src/services/firebase';
+import { toast } from 'react-hot-toast';
 // import { useAuth } from 'src/hooks/useAuth';
 
 type RoomParams = {
@@ -24,11 +25,21 @@ export function AdminRoom() {
   const { title, questions } = useRoom(roomId);
 
   async function handleCloseRoom() {
-    database.ref(`rooms/${roomId}`).update({
-      closedAt: new Date(),
-    });
+    if (window.confirm('Tem certeza deseja encerrar essa sala?')) {
+      await database.ref(`rooms/${roomId}`).update({
+        closedAt: new Date(),
+      });
 
-    history.push('/');
+      history.push('/');
+
+      toast.success('A sala foi encerrada com sucesso!', {
+        style: {
+          color: '#fff',
+          background: '#e21c44',
+        },
+      });
+    }
+    return;
   }
 
   async function handleCheckQuestionAsAnswered(questionId: string) {
@@ -44,8 +55,14 @@ export function AdminRoom() {
   }
 
   async function handleDeleteQuestion(questionId: string) {
-    if (window.confirm('Tem certeza que você deseja excluir essa pergunta?f')) {
+    if (window.confirm('Tem certeza que você deseja excluir essa pergunta?')) {
       await database.ref(`rooms/${roomId}/questions/${questionId}`).remove();
+      toast.success('A pergunta foi deletada!', {
+        style: {
+          color: '#fff',
+          background: '#e21c44',
+        },
+      });
     }
   }
 
@@ -53,8 +70,10 @@ export function AdminRoom() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoImg} alt="LetMeAsk" />
-          <div>
+          <Link to="/">
+            <img id="logo-image" src={logoImg} alt="LetMeAsk" />
+          </Link>
+          <div id="room-code-wrapper">
             <RoomCode code={roomId} />
             <Button isOutlined onClick={handleCloseRoom}>
               Encerrar sala

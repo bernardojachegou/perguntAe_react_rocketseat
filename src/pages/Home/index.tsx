@@ -1,7 +1,7 @@
 import { useHistory } from 'react-router-dom';
 import illustrationImg from 'src/assets/images/illustration.svg';
 import googleIconImg from 'src/assets/images/google-icon.svg';
-import logoImg from 'src/assets/images/logo.svg';
+import logoImg from 'src/assets/images/newlogo.png';
 import { Button } from 'src/components/Button';
 import { useAuth } from 'src/hooks/useAuth';
 import { FormEvent, useState } from 'react';
@@ -31,21 +31,20 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if (!roomRef.exists()) {
-      toast('Room does not exists!', {
-        icon: '😖',
+      toast.error('Está sala não existe!', {
         style: {
           color: '#fff',
-          background: '#835afd',
+          background: '#e21c44',
         },
       });
       return;
     }
 
     if (roomRef.val().closedAt) {
-      toast.error('Room already closed!', {
+      toast.error('Está sala foi encerrada!', {
         style: {
           color: '#fff',
-          background: '#835afd',
+          background: '#e21c44',
         },
       });
       return;

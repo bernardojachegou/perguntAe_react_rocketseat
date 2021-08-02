@@ -1,8 +1,10 @@
+@import '../../styles/global.scss';
+
 .button {
   height: 50px;
   border-radius: 8px;
   font-weight: 500;
-  background: #835afd;
+  background: $primaryColor;
   color: #fff;
   padding: 0 32px;
   display: flex;
@@ -18,8 +20,8 @@
 
   &.outlined {
     background: #fff;
-    border: 1px solid #835afd;
-    color: #835afd;
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
   }
 
   &:not(:disabled):hover {

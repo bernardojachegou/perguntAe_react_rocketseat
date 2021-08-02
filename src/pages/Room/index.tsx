@@ -1,14 +1,14 @@
 import { useState, FormEvent } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import logoImg from 'src/assets/images/logo.svg';
+import logoImg from 'src/assets/images/newlogo.png';
 import { Button } from 'src/components/Button';
 import { RoomCode } from 'src/components/RoomCode';
 import { Question } from 'src/components/Question';
 import { useAuth } from 'src/hooks/useAuth';
 import { useRoom } from 'src/hooks/useRoom';
 import { database } from 'src/services/firebase';
-import 'src/pages/Room/styles.scss';
+import 'src/styles/room.scss';
 
 type RoomParams = {
   id: string;
@@ -65,7 +65,9 @@ export function Room() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoImg} alt="LetMeAsk" />
+          <Link to="/">
+            <img id="logo-image" src={logoImg} alt="LetMeAsk" />
+          </Link>
           <RoomCode code={roomId} />
         </div>
       </header>

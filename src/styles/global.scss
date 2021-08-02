@@ -1,3 +1,8 @@
+$primaryColor: #e21c44;
+$secondaryColor: #140c44;
+$backgroundColor: #f3f3f3;
+$alternative: #2c3393;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +10,8 @@
 }
 
 body {
-  background-color: #f8f8f8;
-  color: #29292e;
+  background-color: $backgroundColor;
+  color: $secondaryColor;
 }
 
 body,
