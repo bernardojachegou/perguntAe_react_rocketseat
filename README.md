@@ -8,6 +8,13 @@
 
 <br>
 
+
+## 💻 Project
+
+PerguntAê is a simple and nice tool that can be used to handle the Q&A in streamming platforms.
+
+This project was created based in **[Next Level Week Together](https://nextlevelweek.com/)**, in July 2021.
+
 ## 🧪 Technologies
 
 This project was developed using:
@@ -31,17 +38,9 @@ $ yarn
 # Start the project
 $ yarn start
 ```
+
 It will run into http://localhost:3000.
 
 Remember to create an account into [Firebase](https://firebase.google.com/) and a new project to handle the Realtime Database.
-
-## 💻 Project
-
-PerguntAê is a simple and nice tool that can be used to handle the Q&A in streamming platforms.
-
-This project was created based in **[Next Level Week Together](https://nextlevelweek.com/)**, in July 2021.
-
-
----
 
 Thank you Rocketseat 💜 👋🏻 [Rocketseat community](https://discord.gg/gKUVrzrPrU)
