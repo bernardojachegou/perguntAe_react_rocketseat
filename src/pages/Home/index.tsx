@@ -41,6 +41,16 @@ export function Home() {
       return;
     }
 
+    if (roomRef.val().closedAt) {
+      toast.error('Room already closed!', {
+        style: {
+          color: '#fff',
+          background: '#835afd',
+        },
+      });
+      return;
+    }
+
     history.push(`/rooms/${roomCode}`);
   }
 
