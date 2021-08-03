@@ -15,6 +15,12 @@ PerguntAê is a simple and nice tool that can be used to handle the Q&A in strea
 
 This project was created based in **[Next Level Week Together](https://nextlevelweek.com/)**, in July 2021.
 
+## 🚀 Personal Implementations
+* Push notifications using [react-hot-toast](https://react-hot-toast.com/)
+* Imports with absolute path
+* DB1 Color set
+* Folders with own ts/sass files (Organization);
+
 ## 🧪 Technologies
 
 This project was developed using:
@@ -22,7 +28,7 @@ This project was developed using:
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## 🚀 Running the project
+## 🔌 Running the project
 
 Clone the repository and go into the folder:
 ```bash
